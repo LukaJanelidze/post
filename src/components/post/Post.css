@@ -1,0 +1,92 @@
+.post-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .post-box-title,
+  .post-box-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .content {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .title-input,
+  .content-input {
+    outline: none;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 200;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+  }
+  
+  .title-input {
+    min-height: 50px;
+  }
+  
+  .content-input {
+    min-height: 100px;
+  }
+  
+  button {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .posted-display {
+    margin-top: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .posted-display div {
+    width: 100%;
+  }
+  
+  .posted-display hr {
+    margin: 20px 0;
+    width: 200px;
+  }
+  
+  .posted-display div h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+  }
+  
+  .posted-display div p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    word-wrap: break-word;
+  }
+  
