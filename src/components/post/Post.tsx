@@ -8,9 +8,10 @@ interface PostProps {
     content: string;
   };
   onSubmit?: (title: string, content: string) => void;
+  onDelete?: (id: string) => void;
 }
 
-const Post: React.FC<PostProps> = ({ post, onSubmit }) => {
+const Post: React.FC<PostProps> = ({ post, onSubmit, onDelete }) => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
 
@@ -41,12 +42,15 @@ const Post: React.FC<PostProps> = ({ post, onSubmit }) => {
     return (
       <div className='posted-display'>
         <div>
-            <h2 className='posted-title'>{post.title}</h2>
+          <h2 className='posted-title'>{post.title}</h2>
         </div>
         <hr />
         <div>
-            <p className='posted-contenr'>{post.content}</p>
+          <p className='posted-content'>{post.content}</p>
         </div>
+        {onDelete && (
+          <button className='delete-button' onClick={() => onDelete(post.id)}>Delete</button>
+        )}
       </div>
     );
   }
