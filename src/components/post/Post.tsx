@@ -3,7 +3,7 @@ import "./Post.css";
 
 interface PostProps {
   post?: {
-    id: number;
+    id: string;
     title: string;
     content: string;
   };

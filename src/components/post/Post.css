@@ -28,7 +28,6 @@
     border-radius: 5px;
     font-size: 18px;
     font-weight: 200;
-    box-sizing: border-box;
     width: 100%;
     resize: none;
   }
@@ -63,7 +62,6 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     overflow: hidden;
   }
   
